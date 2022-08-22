@@ -1,33 +1,35 @@
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { useState } from 'react';
 
-import Welcome from './pages/Welcome';
-import Products from './pages/Products';
-import MainHeader from './components/MainHeader';
-import ProductDetail from './pages/ProductDetail';
+import styles from './App.module.css';
+
+import earth from './images/earth.png'
 
 function App() {
+
+  const [isClicked, setIsClicked] = useState(null);
+
+  const clickHandler = () => {
+    setIsClicked((value) => !value);
+    console.log(isClicked);
+  };
+
+  const description = (
+          <div className={styles.description}>
+            <p>Earth</p>
+          </div>
+          );
+
   return (
-    <div>
-      <MainHeader />
-      <main>
-        <Switch>
-          <Route path='/' exact>
-            <Redirect to="/welcome" />
-          </Route>
-          <Route path='/welcome'>
-            <Welcome />
-          </Route>
-          <Route path='/products' exact>
-            <Products />
-          </Route>
-          <Route path='/products/:productId'> 
-            <ProductDetail />
-          </Route>
-        </Switch>
-      </main>
+    <div className={styles.solarSystemContainer}>
+      <p>The Solar System</p>
+      <div className={styles.orbit}>
+        <div className={styles.planet}>
+          <img onClick={clickHandler} src={earth} alt="earth" />
+        </div>
+      </div>
+      {isClicked && description}
     </div>
   );
 }
-
 
 export default App;
