@@ -7,9 +7,28 @@
 .description {
     position: relative;
     background-color: rgba(1, 77, 116, 0.5);
-    width: 25%;
-    font-size: 150%;
+    color: var(--font-color);
+    width: 500px;
     z-index: 200;
+    border-radius: 10px;
+    padding: 3px 30px;
+}
+
+.close-button {
+    position: relative;
+    top: 25px;
+    left: 470px;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    z-index: 250;
+    transition: background-color 0.25s;
+}
+
+.close-button:hover {
+    cursor:pointer;
+    background-color: var(--font-color);
 }
 
 .orbit {
@@ -21,6 +40,13 @@
 .planet {
     position: relative;
     border-radius: 100%;
+    transition: box-shadow 0.25s;
+}
+
+.planet:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px white;
+    
 }
 
 

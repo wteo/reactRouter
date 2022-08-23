@@ -2,20 +2,18 @@
   box-sizing: border-box;
   --space-background-color: rgb(22, 16, 58);
   --orbit-border: 2px #4A437F dashed;
+  --font-color: white;
 }
 
 body {
   background-color: var(--space-background-color);
 }
 
-h1, p {
-  color: white;
-}
-
 h1 {
   position: relative;
   font-size: 300%;
   z-index: 200;
+  color: var(--font-color);
 }
 
 .solarSystemContainer {

@@ -9,11 +9,19 @@ function Planet(props) {
     const clickHandler = () => {
         setIsClicked((value) => !value);
       };
+    
+    const closeHandler = () => {
+        setIsClicked((value) => !value);
+      };
 
     const description = (
-        <div className='description'>
-          <p>{`${props.planet.charAt(0).toUpperCase()}${props.planet.slice(1)}`}</p>
-        </div>
+        <>
+            <button className='close-button' onClick={closeHandler}>X</button>
+            <div className='description'>
+                <h3>{`${props.planet.charAt(0).toUpperCase()}${props.planet.slice(1)}`}</h3>
+                <p>{props.description}</p>
+            </div>
+        </>
         );
 
 
