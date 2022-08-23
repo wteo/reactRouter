@@ -12,7 +12,7 @@ function Planet(props) {
 
     const description = (
         <div className='description'>
-          <p>{props.planet}</p>
+          <p>{`${props.planet.charAt(0).toUpperCase()}${props.planet.slice(1)}`}</p>
         </div>
         );
 

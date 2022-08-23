@@ -5,8 +5,11 @@
 }
 
 .description {
+    position: relative;
     background-color: rgba(1, 77, 116, 0.5);
     width: 25%;
+    font-size: 150%;
+    z-index: 200;
 }
 
 .orbit {
@@ -16,7 +19,7 @@
 }
 
 .planet {
-    position: absolute;
+    position: relative;
     border-radius: 100%;
 }
 
@@ -27,7 +30,7 @@
     left: 210px;
     width: 200px;
     height: 200px;
-    animation: orbiting 25s linear infinite;
+    animation: orbiting 20s linear infinite;
     z-index: 90;
 }
 
@@ -99,7 +102,7 @@
     width: 625px;
     height: 625px;
     border: 20px solid gray;
-    animation: orbiting 100s linear infinite;
+    animation: orbiting 1000s linear infinite;
     z-index: 50;
 }
 
@@ -178,8 +181,14 @@
 
 
 @keyframes orbiting {
+    0% {
+        transform: rotate(135deg);
+    }
+    50% {
+        transform: rotate(315deg);
+    }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(495deg);
     }
   }
   
