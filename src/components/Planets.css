@@ -83,33 +83,99 @@
     height: 500px;
     animation: orbiting 80s linear infinite;
     z-index: 60;
-  }
+}
   
 #mars {
     top: 147.5px;
     left: 2px;
     height: 27.5px;
     width: 27.5px;
-  }
+}
+
+/* Asteroid Belt */
+#asteroid-belt {
+    top: -10px;
+    left: 40px;
+    width: 625px;
+    height: 625px;
+    border: 20px solid gray;
+    animation: orbiting 100s linear infinite;
+    z-index: 50;
+}
 
 
 /* Jupiter */
 #jupiter-orbit {
-    top: -75px;
-    left: -50px;
+    top: -100px;
+    left: -30px;
     width: 800px;
     height: 800px;
     animation: orbiting 120s linear infinite;
-    z-index: 50;
-  }
+    z-index: 40;
+}
   
 #jupiter {
     top: 100px;
     left: 42.5px;
     height: 100px;
     width: 100px;
-  }
+}
+
+
+/* Saturn */
+#saturn-orbit {
+    top: -250px;
+    left: -130px;
+    width: 1100px;
+    height: 1100px;
+    animation: orbiting 140s linear infinite;
+    z-index: 30;
+}
   
+#saturn {
+    top:190px;
+    left: 60px;
+    height: 80px;
+    width: 80px;
+}
+
+
+/* Uranus */
+#uranus-orbit {
+    top: -400px;
+    left: -250px;
+    width: 1400px;
+    height: 1400px;
+    animation: orbiting 160s linear infinite;
+    z-index: 20;
+}
+  
+#uranus {
+    top: 300px;
+    left: 70px;
+    height: 65px;
+    width: 65px;
+}
+
+/* Neptune */
+#neptune-orbit {
+    top: -550px;
+    left: -350px;
+    width: 1700px;
+    height: 1700px;
+    animation: orbiting 180s linear infinite;
+    z-index: 10;
+}
+  
+#neptune {
+    top: 400px;
+    left: 80px;
+    height: 60px;
+    width: 60px;
+}
+
+
+
 
 @keyframes orbiting {
     100% {

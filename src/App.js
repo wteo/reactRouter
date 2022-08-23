@@ -5,11 +5,13 @@ import Planets from './components/Planets';
 function App() {
    
   return (
-    <div className={styles.solarSystemContainer}>
-      <p>The Solar System</p>
-      <div id={styles.sun} />
-      <Planets />
-    </div>
+    <>
+      <h1>The Solar System</h1>
+      <div className={styles.solarSystemContainer}>
+        <div id={styles.sun} />
+        <Planets />
+      </div>
+    </>
   );
 }
 
