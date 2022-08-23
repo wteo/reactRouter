@@ -26,66 +26,12 @@ p {
   height: 150px;
   border-radius: 100%;
   background-color: orange;
-  z-index: 1000;
+  z-index: 100;
 }
 
 
-.marsOrbit {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 400px;
-  height: 400px;
-  border: var(--orbit-border);
-  border-radius: 100%;
-  animation: orbiting 60s linear infinite;
-}
-
-.marsPlanet {
-  position: relative;
-  top: 100px;
-  left: 2px;
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-}
-
-.earthPlanet img, .marsPlanet img {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-}
-
-.earthOrbit {
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  width: 300px;
-  height: 300px;
-  border: var(--orbit-border);
-  border-radius: 100%;
-  animation: orbiting 40s linear infinite;
-  z-index: 10;
-}
-
-.earthPlanet {
-  position: absolute;
-  top: 62px;
-  left: -5px;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-  z-index: 10;
-}
 
 
-.description {
-  background-color: rgba(1, 77, 116, 0.5);
-  width: 25%;
-}
 
-@keyframes orbiting {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+
+
